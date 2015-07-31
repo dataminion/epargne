@@ -1,0 +1,100 @@
+<!-- BEGIN error_required -->
+<b>Vous n'avez pas replis. Il faut entrer:</b><br>
+<!-- BEGIN data -->
+&nbsp;&nbsp;&nbsp; {error_required.data.ERROR}<br>
+<!-- END data -->
+<!-- END error_required -->
+<!-- BEGIN error_symbol -->
+<b>Il ya pleusieur erreur de saisir. Corriger :</b><br>
+<!-- BEGIN data -->
+&nbsp;&nbsp;&nbsp;{error_symbol.data.ERROR}<br>
+<!-- END data -->
+<!-- END error_symbol -->
+<!-- BEGIN error_password -->
+<b>Il ya pleusieur erreur de saisir. Corriger :</b><br>
+<!-- BEGIN data -->
+&nbsp;&nbsp;&nbsp;{error_password.data.ERROR}<br>
+<!-- END data -->
+<!-- END error_password -->
+
+<!-- BEGIN switch_emp_display -->
+<!-- BEGIN switch_no_goal --> 
+	<div class="notice">
+        <h4>Cette utilisateur n'a pas de zone installer veuiller regler cette problem</h4>
+    </div>
+<!-- END switch_no_goal -->
+<form action="" method="post">
+<table class="form-table" cellspacing="0" id="emp_sheet" width="100%"> 
+<tbody>
+	<tr class="header"> 
+		<th colspan="6"><h3>Compte D'utilisatuer: {EMP_ID}</h3></th> 
+		<td width="35">&nbsp;</td>
+    </tr> 
+     <tr>
+		<th width="200" scope="row"><label for="user_login">Login</label></th>
+		<td colspan="6"><input type="text" name="uname" id="user_login" value="{USER_ID}" disabled="disabled" class="regular-text" /> <br />Le Nom d'utilisateur ne peut pas changer.</td>
+	</tr>
+    <tr>
+        <th width="200" scope="row"><label for="first_name">Prenom</label></th>
+        <td colspan="6"><input type="text" name="fname" id="first_name" value="{FIRST_NAME}" class="regular-text" /></td>
+    </tr>
+    <tr>
+        <th scope="row"><label for="last_name">Nom</label></th>
+        <td colspan="6"><input type="text" name="lname" id="last_name" value="{LAST_NAME}" class="regular-text" /></td>
+    </tr>
+	<tr>
+		<th cope="row"><label for="user_login">Date de Comencement</label></th>
+		<td colspan="6"><input type="text" name="date" id="hire_date" value="{HIRE_DATE}" disabled="disabled" class="regular-text" /></td>
+	</tr>
+    <tr>
+        <th scope="row"><label for="nickname">Zone</label></th>
+        <td colspan="6"><input type="text" name="zone" id="zone" value="{ZONE}" class="regular-text" /></td>
+    </tr>
+	<tr>
+        <th width="200" scope="row"><label for="display_name">Position</label></th>
+        <td colspan="6">
+            <select name="job" id="job">
+			<!-- BEGIN select -->
+				<option value="{switch_emp_display.select.JOB_LVL}"
+				<!-- BEGIN selected -->
+				selected="selected"
+				<!-- END selected -->
+				>{switch_emp_display.select.JOB_TITLE}</option>
+            <!-- END select -->
+             </select>
+        </td>
+    </tr>
+	<!--
+	<tr class="header"> 
+		<th colspan="6"><h3>Contact</h3></th> 
+		<td width="35">&nbsp;</td>
+	</tr> 
+	<tr>
+		<th scope="row"><label for="url">Telephone</label></th>
+		<td colspan="6"><input type="text" name="tel" id="url" value="+229 97-00-00-00" class="regular-text" /></td>
+	</tr>
+	<tr>
+		<th scope="row"><label for="email">E-mail</label></th>
+		<td colspan="6"><input type="text" name="email" id="email" value="emp_no_1@clcam.bj" class="regular-text" /></td>
+	</tr>
+	-->
+ 	<tr class="header"> 
+		<th scope="row"><h3>Utils</h3></th> 
+		<td colspan="6">&nbsp;</td>
+    </tr>   
+     <tr>
+        <th scope="row"><label for="pass1">Nouveau Mot de Pass</label></th>
+        <td colspan="6"><input type="password" name="pass1" id="pass1" size="16" value="" autocomplete="off" /> Si vous coulez changer le mot de pass marqer le ici. Si non laissez la boite vide.<br />
+            <input type="password" name="pass2" id="pass2" size="16" value="" autocomplete="off" /> Marquer votre nouveau mot de pass encore.<br />
+        </td>
+    </tr>   
+</tbody>	
+</table>
+<p class="submit">
+	<input type="hidden" name="uid" value="{EMP_ID}" />
+	<input type="hidden" name="uname" value="{USER_ID}" />
+	<input type="hidden" name="action" value="update" />
+	<input type="submit" class="button-primary" value="Met en Jour" name="Submit" />
+</p>
+</form>
+<!-- END switch_emp_display -->

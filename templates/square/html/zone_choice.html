@@ -1,0 +1,23 @@
+        <table id="list" width="100%" cellspacing="0" summary="Data set of the zones in a city which have been assigned to a promoter.">
+            <caption>Une liste des zones dans votre ville</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Zone</th>
+                    <th scope="col" colspan="2">Nom du Promoteur</th>
+                </tr>
+            </thead>
+            <tfoot>
+                <tr>
+                    <td colspan="5">Choisis une zone</td>
+                </tr>
+            </tfoot>
+            <tbody>
+               <!-- BEGIN line -->
+                <tr class="{line.SWITCH}">
+                    <td><a href='index.php?pageload=4&zid={line.ZONE}'>{line.ZONE}</a></td>
+                    <td><!--<a href='index.php?pageload=9&eid={line.EMP_ID}'>-->{line.FNAME}<!--</a>--></td>
+                    <td><!--<a href='index.php?pageload=9&eid={line.EMP_ID}'>-->{line.LNAME}<!--</a>--></td>
+                </tr>
+                <!-- END line -->
+            </tbody>
+        </table>

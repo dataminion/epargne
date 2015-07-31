@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Epargne Planifi&eacute;e::SqlSaver1.0::{TITLE}</title>
+	<link 	type="image/x-icon" 	rel="icon" 							href="templates/square/img/ico/coins.png" />
+	<link 	type="image/x-icon" 	rel="shortcut icon" 				href="templates/square/img/ico/coins.png"  />
+    <link 	type="text/css" 		rel="stylesheet" 	media="screen" 	href="templates/square/style.css"/>
+    <link 	type="text/css" 		rel="stylesheet" 	media="screen" 	href="templates/square/Menu.css"/>
+	<link 	type="text/css" 		rel="stylesheet"	media="print" 	href="templates/square/print.css" />
+<!--[if IE 7]>
+    <link 	type="text/css" 		rel="stylesheet"	media="screen" 	href="templates/square/ie.css" />
+<![endif]-->
+<!--[if lte IE 6]>
+    <link 	type="text/css" 		rel="stylesheet"	media="screen" 	href="templates/square/ie.css" />
+<![endif]-->
+<!--[if lt IE 6]>
+    	<link 	type="text/css" 		rel="stylesheet"	media="screen" 	href="templates/square/ie.css" />
+<![endif]-->
+    <script type="text/javascript"  src="templates/square/Menu.js"></script>
+    <script type="text/javascript"  src="templates/square/scripts.js"></script>
+</head>
+<body>
+    <div id="wrap">
+      <div id="header">
+        <h1><a href="index.php">Epargne Planifi&eacute;e</a></h1>
+        <h2>SqlSaver1.0, {TITLE}</h2>
+      </div>
+    </div>
+    <hr />
+    <div id="wrap">
+      <div class="dropdown">
+        <div class="left_edge">&nbsp;</div>
+        <div class="mid">
+          <ul id="MenuBar1" class="MenuBarHorizontal">
+                        <!-- BEGIN menu -->
+                            <li>
+                                <a class="MenuBarItemSubmenu"  tabindex="0"><!--href="help.php?topic={menu.CATEGORY}"-->{menu.CATEGORY}</a>
+                                    <ul>
+                                    <!-- BEGIN sub -->
+                                        <li><a href='index.php?pageload={menu.sub.PAGE_NUM}' tabindex="0" >{menu.sub.PAGE_NAME}</a></li>
+                                    <!-- END sub -->
+                                    </ul>
+                            </li>
+                        <!-- END menu -->
+                            <li><a class="MenuBarItemLAST" href="logout.php" onclick="return confirmLink(this, 'Fermer le session')" tabindex="0" >Fermer le session</a></li>
+                    </ul>
+        </div>
+        <div class="right_edge">&nbsp;</div>
+      </div>
+      <div id="top"> </div>
+      <div id="content">

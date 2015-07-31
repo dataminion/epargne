@@ -1,0 +1,61 @@
+
+<h1>Fin de Jour {DATE}</h1>
+<!-- BEGIN deposit -->
+<table class="tabl" width="80%" cellspacing="0" summary="Somaire des donnes journalier.">
+	<caption>Somaire Depose</caption>
+    <thead>
+            <tr>
+                <th class="empty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <th>Zone</th>
+                <th>Total Transaction</th>
+                <th>Total Deposer</th>
+                <th>excel</th>
+            </tr>
+    </thead>
+    <tbody>
+            <tr class="{deposit.SWITCH}">
+                <th class="empty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <td>{deposit.ZONE}</td>
+                <td>{deposit.TRANSACTION}</td>
+                <td>{deposit.DEPOSIT}</td>
+                <td>
+                <a href="excel/zonedeposit.php?zone={deposit.ZONE}">
+                <img src="templates/square/img/ico/excel.gif"/>
+                </a>
+                </td>
+            </tr>
+    </tbody>
+</table>
+<!-- END deposit -->
+
+<!-- BEGIN withdraw -->
+<table class="tabl" width="80%" cellspacing="0"
+summary="Somaire des donnes journalier.">
+ <caption>
+ Somaire Retrait
+ </caption>
+    <thead>
+        <tr>
+          <th>Zone</th>
+          <th>Total Transaction</th>
+          <th>Total Retrait</th>
+          <th>excel</th>
+      </tr>
+    </thead>
+    <tbody>
+            
+        <tr class="{deposit.SWITCH}">
+                <td>{withdraw.ZONE}</td>
+                <td>{withdraw.TRANSACTION}</td>
+                <td>{withdraw.TWITH}</td>
+                <td>
+                    <a href="excel/zonewithdraw.php?zone={withdraw.ZONE}">
+                    <img src="templates/square/img/ico/excel.gif"/>
+                    </a>
+                </td>
+        </tr>
+			
+        </tr>
+    </tbody>
+</table>
+<!-- END withdraw -->

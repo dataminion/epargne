@@ -1,0 +1,151 @@
+@import url("boxes.css");
+@import url("tables.css");
+@import url("login.css");
+* 
+	{
+	    padding: 					0;
+		margin: 					0;
+	}
+body 
+	{
+		background: 				#dee8e8;
+		font-family:				Verdana, Arial;
+		line-height: 				20px;
+		color: 						#333333;
+		background-image:			url(img/gradient_t.png);
+		background-repeat:			repeat-x;
+		background-position:		top;
+		width:						100%;
+		padding: 					40px 0 0 0;
+	}
+hr
+	{
+		width:						125%;
+		margin:						0 0 0 0;
+	}
+	
+img { 	border: 					none;}
+a 	{ 	color: 						#00675e;}
+a:hover 
+	{ 
+		text-decoration:			none;
+		color:						#01a39a;
+	}
+
+#wrap 
+	{
+		margin: 					0 auto 0 auto;
+		width: 						800px;
+	}
+#header 
+	{ 
+		background: 				url(img/ico/clcamicon.png) no-repeat left;
+		padding-bottom:				10px;
+		margin-bottom:				3px;
+		text-align:					left;
+	}
+#header h1 
+	{
+		font-size: 					30px;
+		font-weight: 				100;
+		letter-spacing: 			-3px;
+		padding: 					12px 0px 10px 70px;
+	}
+#header h1 a 
+	{
+		color: 						#00675e;
+		text-decoration: 			none;
+		border-bottom:				solid 1px #dece79;
+	}
+#header h1 a:hover 
+	{
+		color: 						#01a39a;
+		text-decoration: 			none;
+	}
+#header h2 
+	{
+		color: 						#cb2a2f;
+		font-size: 					15px;
+		font-weight: 				100;
+		padding: 					0 0 0 71px;
+		letter-spacing: 			-1px;
+		line-height: 				12px;
+	}
+
+.dropdown
+	{	
+		height: 					80px;
+	}
+.dropdown .left_edge 
+	{
+		background-image: 			url(img/menu_l.png);
+		background-repeat: 			no-repeat;
+		background-position: 		left top;
+		float:						left;
+		height: 					58px;
+		width: 						5%;
+	}
+.dropdown .mid
+	{
+		width:						90%;
+		height: 					58px;
+		background-image: 			url(img/menu.png);
+		background-repeat:			repeat-x;
+		float:						left;
+	}
+.dropdown .right_edge 
+	{
+		background-image: 			url(img/menu_r.png);
+		background-repeat: 			no-repeat;
+		background-position:		right top;
+		height: 					58px;
+		width: 						5%;
+		float:						left;
+	}
+
+#content 
+	{
+		background:					url(img/content.png) repeat-y;
+		padding: 					10px 20px;
+	}
+
+ h1#content
+	{
+		color: 						#00675e;
+		text-decoration: 			underline;
+		text-align: 				center;
+		margin:						4% 4% 4% 4%;
+	}
+
+.left 
+	{
+		width: 						100%;
+		float: 						left;
+		text-align: 				justify;
+	}
+.left h2 
+	{
+		color: 						#FF4800;
+		font-size: 					24px;
+		letter-spacing: 			-3px;
+		font-weight: 				100;
+		padding : 					10px 0 15px 0;
+	}
+#top 
+	{
+		background:					url(img/content_t.png) no-repeat;
+		padding: 					5px 0;
+	}
+#bottom 
+	{
+		background:					url(img/content_b.png) no-repeat top;
+		padding: 					10px 0;
+	}
+#footer 
+	{
+		margin-left: 				5%;
+		text-align: 				center;
+		color: 						#eee;
+		font-size: 					11px;
+		padding: 					0 0 0px 0;
+	}	

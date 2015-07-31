@@ -1,0 +1,367 @@
+@charset "utf-8";
+/* CSS Document */
+table 
+	{   
+		margin:						0em 0 0em 0;
+		text-align: 				left;
+
+	}
+table a 
+	{   
+		text-decoration:			none;
+		padding-left:				5px;
+	}	
+thead th
+	{
+		padding-left:3px;
+	    background: url(img/th_bg.png) no-repeat left top;
+	    color: white;
+	    text-align: left;
+		border-right:1px solid #14556b;
+		border-bottom:1px solid #14556b;
+	}
+tfoot
+	{
+		color:						#fff;
+		background-color:			#354342;
+	}
+.line
+	{
+		background-color:			#ccc;
+	}
+.a
+	{
+		background-color:			#ccc;
+	}
+table#list tbody
+	{
+		background-color:			#e2e1dd;
+		border-left:             	0.1em solid #F60;
+	}
+table#list 
+	{
+		border-left:             	2px solid  #dee8e8;
+		border-right:             	2px solid  #dee8e8;
+	}
+
+/****************************************************************************************/
+table#form {
+}	
+#form th
+	{
+		width:						200px;
+		text-align: 				right;
+		vertical-align: 			top;
+		font-family: 				Verdana;
+		font-size: 					0.7em;
+		padding-right: 				12px;
+		padding-top: 				0.75em;
+		padding-bottom: 			0.75em;
+	}
+#form  .header th 
+	{
+		text-align: 				left;
+		text-transform: 			uppercase;
+		font-size: 					.9em;
+		padding-left: 				220px;
+		border-bottom: 				2px solid #93c2de;
+	}
+#form td 
+	{
+		vertical-align: 			middle;
+		background-color:			#dee8e8;
+		border-bottom: 				1px solid white;
+		color: 						white;
+		border-left: 				4px solid #93c2de;
+		padding: 					4px;
+		font-family: 				Verdana;
+		font-size: 					.7em;
+	}
+#form .required 
+	{
+		color: 						red;
+	}
+/****************************************************************************************/
+#cust_sheet th
+	 {
+		width:						25%;
+		text-align: 				right;
+		vertical-align: 			top;
+		font-family: 				Verdana;
+		font-size: 					0.7em;
+		border-right: 				4px solid #00675e;
+		padding-right: 				12px;
+		padding-top: 				0.75em;
+		padding-bottom: 			0.75em;
+	}
+#cust_sheet tbody .header th
+	{
+		text-align: 				left;
+		text-transform: 			uppercase;
+		font-size: 					.9em;
+		border-right: 				0px;
+		padding-left: 				220px;
+		border-bottom: 				2px solid #00675e;
+	}
+#cust_sheet td
+	{
+		vertical-align: 			middle;
+		background-color: 			#9bc1bd;
+		border-top: 				2px solid #00675e;
+		color: 						white;
+		background-image:			none;
+		background-position:		bottom right;
+		background-repeat:			no-repeat;
+		padding: 					4px;
+		font-family: 				Verdana;
+		font-size: 					.7em;
+	}
+#cust_sheet .header td
+	{
+		text-align: 				right;
+		font-size: 					.7em;
+		background-color:			#fff;
+		border-bottom: 				2px solid #00675e;
+		border-top: 				0px;
+		border-left: 				0px;
+		background-image:			none;
+		color:						#000;
+	}
+#cust_sheet tbody#money th
+	 {
+		width:						25%;
+		text-align: 				right;
+		vertical-align: 			top;
+		font-family: 				Verdana;
+		font-size: 					0.7em;
+		border-right: 				4px solid #F60;
+		padding-right: 				12px;
+		padding-top: 				0.75em;
+		padding-bottom: 			0.75em;
+	}
+#cust_sheet tbody#money .header  th
+	{
+		text-align: 				left;
+		text-transform: 			uppercase;
+		font-size: 					.9em;
+		border-right: 				0px;
+		padding-left: 				220px;
+		border-bottom: 				2px solid #F60;
+		color:						#F60;
+	}
+#cust_sheet tbody#money td
+	{
+		background-color: 			#FF9;
+		background-image:			none;
+		color:						#000000;
+		border-top: 				2px solid #F60;
+	}
+/***************/
+#deposit{
+	width:96%;
+	margin:2%;
+	
+	}
+/***************************************************************/
+.submit {
+	padding: 1.5em 0;
+	margin: 5px 0;
+	-moz-border-radius: 0 0 3px 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-webkit-border-bottom-right-radius: 3px;
+	-khtml-border-bottom-left-radius: 3px;
+	-khtml-border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+form p.submit a.cancel:hover {
+	text-decoration: none;
+}
+.submit input,
+.button,
+.button-primary,
+.button-secondary,
+.button-highlighted,
+#postcustomstuff .submit input {
+	font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+	text-decoration: none;
+	font-size: 11px !important;
+	line-height: 16px;
+	padding: 2px 8px;
+	cursor: pointer;
+	border-width: 1px;
+	border-style: solid;
+	-moz-border-radius: 11px;
+	-khtml-border-radius: 11px;
+	-webkit-border-radius: 11px;
+	border-radius: 11px;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	-khtml-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+a.button,
+a.button-primary,
+a.button-secondary {
+	line-height: 1.2em;
+	-webkit-border-radius: 10px;
+	padding: 4px 10px;
+}
+/* A handy div class for hiding controls.
+Some browsers will disable them when you
+set display: none; */
+.zerosize {
+	height: 0;
+	width: 0;
+	margin: 0;
+	border: 0;
+	padding: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+/* Tables used on comment.php and option/setting pages */
+
+.form-table {
+	border-collapse: collapse;
+	margin-top: 0.5em;
+	width: 100%;
+	margin-bottom: -8px;
+	clear: both;
+}
+
+.form-table td{
+	margin-bottom: 9px;
+	padding: 4px 10px 12px;
+	line-height: 20px;
+	font-size: 11px;
+}
+
+.form-table th{
+	font-weight: normal;
+	text-shadow: rgba(255,255,255,1) 0 1px 0;
+}
+
+.form-table th{
+	vertical-align: top;
+	text-align: left;
+	padding: 10px;
+	width: 200px;
+}
+
+.form-table th.th-full {
+	width: auto;
+}
+
+.form-table input,
+.form-table textarea{
+	border-width: 1px;
+	border-style: solid;
+}
+
+.form-table input.tog {
+	margin-top: 2px;
+	margin-right: 2px;
+	float: left;
+}
+
+textarea.large-text {
+	width: 99%;
+}
+
+.form-table input.regular-text {
+	width: 325px;
+}
+
+.form-table input.small-text {
+	width: 50px;
+}
+
+.form-table .pre {
+	padding: 8px;
+	margin: 0;
+}
+
+table.form-table td .updated {
+	font-size: 13px;
+}
+
+
+#pass-strength-result {
+	border-style: solid;
+	border-width: 1px;
+	float: left;
+	margin: 12px 5px 5px 1px;
+	padding: 3px 5px;
+	text-align: center;
+	width: 200px;
+}
+
+#pass-strength-result {
+	background-color: #eee;
+	border-color: #ddd !important;
+}
+
+#pass-strength-result.bad {
+	background-color: #ffb78c;
+	border-color: #ff853c !important;
+}
+
+#pass-strength-result.good {
+	background-color: #ffec8b;
+	border-color: #fc0 !important;
+}
+
+#pass-strength-result.short {
+	background-color: #ffa0a0;
+	border-color: #f04040 !important;
+}
+
+#pass-strength-result.strong {
+	background-color: #c3ff88;
+	border-color: #8dff1c !important;
+}
+
+#emp_sheet th
+	 {
+		width:						25%;
+		text-align: 				left;
+		vertical-align: 			top;
+		font-family: 				Verdana;
+		border-right: 				4px solid #00675e;
+		padding-left: 				15px;
+		padding-top: 				0.75em;
+		padding-bottom: 			0.75em;
+	}
+#emp_sheet tbody .header th
+	{
+		text-align: 				left;
+		text-transform: 			uppercase;
+		border-right: 				0px;
+		border-bottom: 				2px solid #00675e;
+	}
+#emp_sheet td
+	{
+		vertical-align: 			middle;
+		background-color: 			#9bc1bd;
+		color: 						white;
+		background-image:			none;
+		background-position:		bottom right;
+		background-repeat:			no-repeat;
+		padding: 					4px;
+		font-family: 				Verdana;
+		font-size: 					.7em;
+	}
+#emp_sheet .header td
+	{
+		text-align: 				right;
+		font-size: 					.7em;
+		background-color:			#fff;
+		border-bottom: 				2px solid #00675e;
+		border-top: 				0px;
+		border-left: 				0px;
+		background-image:			none;
+		color:						#000;
+	}

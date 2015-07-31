@@ -1,0 +1,58 @@
+<!-- BEGIN error_msg -->
+<h4> Votre Tavail a donne des erreurs a regler, </h4>
+<!-- END error_msg -->
+<!-- BEGIN error -->  
+		<div class="error">
+			<ul>
+<!-- BEGIN switch_who_the_hell --> 
+			<li><h4>Vous n'avez pas cet client dans ton zone, </h4></li>		
+<!-- END switch_who_the_hell --> 
+<!-- BEGIN switch_not_cust -->
+			<li><h4 N'est pas dans votre Zone, </h4></li>	
+<!-- END switch_not_cust --> 
+<!-- BEGIN switch_is_double --> 
+			<li><h4>Meme client entree deux fois, </h4></li>		
+<!-- END switch_is_double --> 
+<!-- BEGIN switch_not_round_goal --> 
+			<li><h4> La Mise ne devise pas, </h4></li>
+<!-- END switch_not_round_goal --> 	
+			</ul>
+			
+		<div id="input">
+			<form action = "index.php?pageload=14" method = POST>
+			<fieldset id="a">
+				Client Numero:
+				{error.CLIENT_ID}
+				<br />
+				Somme Deposer: 
+				<input type ="text" name = "GOAL" id="GOAL" value="{error.GOAL}" />
+				<input type="hidden" name="fstring" value="{HIDDEN}">
+				<input type="hidden" name="fposition" value="{error.POSITION}">
+				<input type="hidden" name="final" value="final">
+			</fieldset>
+			<fieldset id="b">
+<!-- BEGIN switch_who_the_hell --> 
+				<input  class="but" name="delete" type="submit" value = "Suprimer"/>	
+<!-- END switch_who_the_hell --> 
+<!-- BEGIN switch_not_cust --> 
+				<input  class="but" name="delete" type="submit" value = "Suprimer"/>
+<!-- END switch_not_cust --> 
+<!-- BEGIN switch_not_round_goal --> 
+				<input  class="but" name="replace" type="submit" value = "Changer"/>
+<!-- END switch_not_round_goal --> 
+<!-- BEGIN switch_is_double -->
+				<input  class="but" name="delete" type="submit" value = "Suprimer"/>
+<!-- END switch_is_double --> 
+			</fieldset>
+			</form>
+		</div>
+	</div>		
+<!-- END error --> 
+ 
+<!-- BEGIN switch_no_data --> 
+Vous avez eliminer tous vos donne veuille recomencer
+
+<a href='?pageload=14'>D&eacute;poser</a>
+<!-- END switch_no_data --> 					
+
+

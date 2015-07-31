@@ -1,0 +1,1 @@
+<?php	$template->set_filenames(array(				'body' => 'backup.html')			);	$template->assign_block_vars('switch_backup',	array(				'SWITCH' => $switch,				'CUST_ID' => $resultie[EMP_ID],				'FNAME' => $resultie[FIRST_NAME],				'LNAME' => $resultie[LAST_NAME],				'ZONE' => $resultie[ZONE],)			);				$template->pparse('body');?>

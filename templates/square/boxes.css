@@ -1,0 +1,304 @@
+/******************************* input box: verify **************************************/
+.verify 
+	{
+		color:						#000000;
+		background-color:			#CCC;
+	}
+h1.verify,
+div.verify 
+	{
+		margin:						4% 4% 4% 4%;
+		border:						0.1em solid #000;
+		padding:					3% 0px 3% 0px;
+		width:						92%;
+	}
+.verify label
+	{
+		padding-left:				15%;
+		padding-top:				1%;
+		display:					inline-block;
+		height:						64px;
+		vertical-align:				text-bottom;
+		text-align:					right;
+	}
+.verify .buttons
+	{
+		margin:             		0.5em 2% 0.5em 2%;
+		background-repeat:  		no-repeat;
+		background-position: 		right;
+		font-size:					22px;
+		height:						36px;
+		padding-right:				30px;
+		float:						right;
+	}
+.verify #ok
+	{	background-image:			url(img/ico/ok.png);}
+.verify #delete
+	{	background-image:			url(img/ico/delete.png);}
+.verify fieldset
+	{
+		margin:						0 3% 0 3%;
+		display:					inline;
+		vertical-align:				middle;
+		width:						94%;
+	}
+/******************************* input box: deposit **************************************/
+.deposit 
+	{
+		color:						#000000;
+		background-color:			#CCC;
+	
+	}
+h1.deposit,
+div.deposit 
+	{	
+		margin:						0.5em 2% 0.5em 2%;
+		border:						0.1em solid #000;
+		padding:					0px 0px 0px 0px;
+		height:						100px;
+		width:						96%;
+	}
+
+.deposit input
+	{
+		margin-left:				-20%;
+	}
+.deposit input.add
+	{
+		margin-left:				.5%;
+		background-image:			url(img/ico/add.png);
+		width:						92%;
+		height:						92%;
+	}
+.deposit input.search
+	{
+		margin-left:				.5%;
+		background-image:			url(img/ico/search.png);
+		width:						92%;
+		height:						92%;
+	}
+.deposit label
+	{
+		padding-left:				15%;
+		padding-top:				1%;
+		display:					inline-block;
+		height:						64px;
+		vertical-align:				text-bottom;
+		text-align:					right;
+	}
+.deposit label.download
+	{
+		background-image:			url(img/ico/download.png);
+		background-repeat:			no-repeat;
+		background-position:		0px 50%;
+	}
+.deposit label.client
+	{
+		background-image:			url(img/ico/client.png);
+		background-repeat:			no-repeat;
+		background-position:		0px 50%;
+	}
+.deposit label.goal
+	{
+		background-image:			url(img/ico/coins.png);
+		background-repeat:			no-repeat;
+		background-position:		0px 50%;
+	}
+.deposit label.zone
+	{
+		background-image:			url(img/ico/zone.png);
+		background-repeat:			no-repeat;
+		background-position:		0px 50%;
+	}
+.deposit fieldset.a
+	{	width:						550px;}
+.deposit fieldset.b
+	{	width:						75px;}
+.deposit fieldset.b input
+	{	Margin: 					4px;}
+.deposit fieldset
+	{
+		margin:						10px 20px 10px 20px;
+		height:						75px;
+		display:					inline;
+		vertical-align:				middle;
+	}
+/******************************* message boxes: data-loss warning **************************************/
+.dataloss 
+	{
+		color:              		#000000;
+		background-color: 			#FF9;
+	}
+h1.dataloss,
+div.dataloss
+	{
+		margin:            			0.5em 2% 0.5em 2%;
+		border:             		0.1em solid #F60;
+		background-image:   		url(img/ico/trash.png);
+		background-repeat:  		no-repeat;
+		background-position: 		10px 50%;
+		padding:            		10px 15% 10px 15%;
+		width:						66%;
+		height:						70px;
+	}
+.dataloss h1{
+		text-decoration: 			none;
+		
+		border:						0 0 0 0;
+}
+.dataloss h1 
+	{
+		border-bottom:      		0.1em solid #F60;
+		font-weight:        		bold;
+		text-align:         		center;
+		margin:             		2% 0px 0.2em 0;
+		font-size:					medium;
+	}
+/******************************* message boxes: warning, error, confirmation **************************************/
+.notice 
+	{
+		color:              		#F60;
+		background-color: 			#FF9;
+	}
+h1.notice,
+div.notice 
+	{
+		margin:             		0.5em 2% 0.5em 2%;
+		border:             		0.1em solid #F60;
+		background-image:   		url(img/ico/critical.png);
+		background-repeat:  		no-repeat;
+		background-position: 		10px 50%;
+		padding:            		10px 15% 10px 15%;
+		width:						66%;
+	}
+.notice h1 
+	{
+		border-bottom:      		0.1em solid #F60;
+		font-weight:        		bold;
+		text-align:         		left;
+		margin:             		0 0 0.2em 0;
+	}
+/******************************* message boxes: warning, error, confirmation **************************************/
+.welcome 
+	{
+		color:              		#000000;
+		background-color:   		#FFFFDD;
+	}
+h1.welcome,
+div.welcome 
+	{
+		margin:             		0.5em 2% 0.5em 2%;
+		border:             		0.1em solid #FF0;
+		background-image:			url(img/ico/coins.png);
+		background-repeat:  		no-repeat;
+		background-position: 		10px 50%;
+		padding:            		10px 15% 10px 15%;
+		width:						66%;
+	}
+.welcome h1 
+	{
+		border-bottom:      		0.1em solid #FFD700;
+		font-weight:        		bold;
+		text-align:         		left;
+		margin:             		0 0 0.2em 0;
+	}
+/******************************* message boxes: warning, error, confirmation **************************************/
+.error 
+	{
+		color:              		#000000;
+		background-color:			#FCC;
+	}
+h1.error,
+div.error 
+	{
+		margin:             		0.5em 2% 0.5em 2%;
+		border:             		0.1em solid #F00;
+		background-image:   		url(img/ico/error.png);
+		background-repeat:  		no-repeat;
+		background-position: 		10px 50%;
+		padding:            		10px 15% 10px 15%;
+		width:						66%;
+	}
+.error h1 
+	{
+		border-bottom:      		0.1em solid #F00;
+		font-weight:        		bold;
+		text-align:         		left;
+		margin:             		0 0 0.2em 0;
+	}
+div.error div#input{
+		color:						#000000;
+		background-color:			#CCC;
+		border:             		0.1em solid #F00;
+		margin-top: 				1%;
+	}	
+div.error div fieldset{
+		display: 					inline;
+		padding: 					1.5%;
+		height: 					50px;
+		margin: 					3% 5% 2% 5%;
+	}	
+.error div fieldset#a{
+		width:						50%;
+		line-height: 				26px;
+}
+.error div fieldset#a input{
+		margin-left:				2%;
+		width:						30%;
+}
+.error div fieldset#b{
+		width:						20%;
+		
+}
+.error div fieldset#b input{
+		margin-left:				2%;
+		width:						95%;
+}
+/******************************* message boxes: warning, error, confirmation **************************************/
+.upload 
+	{
+		color:              		#000000;
+		background-color:			#ccc;
+	}
+div.upload
+	{
+		margin:             		0.5em 2% 0.5em 2%;
+		border:             		0.1em solid #000;
+		background-image:   		url(img/ico/.png);
+		background-repeat:  		no-repeat;
+		background-position: 		10px 50%;
+		padding:            		10px 0 10px 0;
+		width:						96%;
+	}
+.upload fieldset{
+		display: 					block;
+		padding: 					1.5%;
+		height: 					30px;
+		margin: 					3% 5% 2% 5%;
+	}
+.upload fieldset#a{
+		line-height: 				26px;
+}
+.upload fieldset#a label{
+display: 					block;
+		font-size: 					small;
+		float: 						left;
+		margin-left:				2%;
+}
+.upload fieldset#a input{
+		float: 						right;
+		margin-right:				20%;
+		width:						20%;
+}
+.upload fieldset#b{
+		margin-left: 71.5%;
+		width:						20%;
+		
+}
+.upload fieldset#b input{
+		margin-left:				2%;
+		width:						95%;
+}
+	
+	
+	

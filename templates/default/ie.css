@@ -1,0 +1,26 @@
+@charset "utf-8";
+/* CSS Document */
+
+hr{
+	border-collapse: collapse;
+	padding: 0px;
+	margin-left: 0px;
+	margin-bottom:0px;
+	width:100%;
+	float:left;
+}
+.header{
+	margin-top: 0;
+	}
+.bar{
+	margin-bottom:0px;
+	}
+.mid h1 {
+	padding-top:15px;
+}
+.dropdown {
+	margin-top:-15px;
+}
+.dropdown ul{
+	margin-top:10px;
+}

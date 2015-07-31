@@ -1,0 +1,100 @@
+<form action="registration.cfm" method="post"> 
+
+  <table cellspacing="0"class="form" width="100%"> 
+    <tr class="header"> 
+      <th colspan="2">Information General</th> 
+    </tr> 
+   
+    <tr> 
+      <th scope="row">Nom du Compte<br />
+       (remplis automaticmant par nom du client si vide)</th> 
+      <td><input name="uname" type="text" /></td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Numero de compte CLCAM</th> 
+      <td><input type="text" name="address" /></td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Agent du CLCAM</th> 
+      <td>1</td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Date comencement</th> 
+      <td>7/28/1983</td> 
+    </tr> 
+
+    <tr class="header"> 
+      <th colspan="2">Contact Information</th> 
+    </tr> 
+
+    <tr class="required"> 
+      <th scope="row">Prenom* </th> 
+      <td><input name="fname" type="text" size="11" /></td> 
+    </tr> 
+
+    <tr class="required"> 
+      <th scope="row">Nom* </th> 
+      <td><input name="lname" type="text" size="11" /></td> 
+    </tr> 
+
+    <tr class="required"> 
+      <th scope="row">Sexe*</th> 
+      <td>
+      	<input type="radio" name="sex" value="female" /> 
+        Female
+        <input type="radio" name="sex" value="male" /> 
+        Male 
+      </td> 
+    </tr> 
+
+    <tr class="required"> 
+      <th scope="row">Date de Naisance*</th> 
+      <td>
+            <select name="month"> 
+                <option selected="selected" disabled="disabled">Month</option> 
+                <option value="alabama">Alabama</option> 
+            </select>
+            <select name="day"> 
+                <option selected="selected" disabled="disabled">Day</option> 
+                <option value="alabama">Alabama</option> 
+            </select>
+            <select name="year"> 
+                <option selected="selected" disabled="disabled">Year</option> 
+                <option value="alabama">Alabama</option> 
+            </select>
+        </td> 
+    </tr>
+     
+    <tr> 
+      <th scope="row">Profession</th> 
+      <td><input type="text" name="address2" /></td> 
+    </tr> 
+    
+    <tr class="header"> 
+      <th colspan="2">Misc. Information</th> 
+    </tr> 
+
+    <tr class="required"> 
+      <th scope="row">Zone*</th> 
+      <td><input name="zone" type="text" id="zone" size="5" maxlength="3" /></td>
+    </tr> 
+    
+	<tr class="required"> 
+      <th scope="row">Mise*</th> 
+      <td><input name="zone" type="text" id="zone" size="5" maxlength="5" /></td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Photo</th> 
+      <td><input type="file" name="upload_file"></td> 
+    </tr> 
+
+  </table> 
+
+  <input type="submit" name="Submit" value="Submit" id="buttonSubmit" /> 
+  <input type="reset" name="Submit2" value="Reset" id="buttonReset" /> 
+
+</form>

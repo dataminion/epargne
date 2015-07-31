@@ -1,0 +1,86 @@
+<hr />
+<!-- BEGIN switch_edit_entry -->
+	<form action = "index.php?pageload=16" method = POST>
+		<input type="hidden" name="input" value="{HIDDEN}" />
+		<h2>
+		Vous avez choisi de edite le donnee du Client:{switch_edit_entry.CLIENT_ID} Avec la somme de:{switch_edit_entry.MONTANT}
+		<input name="cancel" type="submit"  class="but" style="vertical-align:absbottom;" tabindex="30" value = "Annuler" />
+		</h2>
+
+	</form>
+<!-- END switch_edit_entry -->  
+<!-- BEGIN switch_deposit_done --> 
+<h4>Bon Travail Le Page est entree</h4>
+<br />
+<!-- END switch_deposit_done -->
+<table class="tabl" width="90%" cellspacing="0"
+    summary="Retrait pour une journee.">
+  <caption>
+  Prennez temps de bien verifier vos donne
+  </caption>
+  <thead>
+    <tr>
+      <th width="8" class="first">&nbsp;</th>
+      <th width="178">Date (mm/jj/yyyy)</th>
+      <th width="115"> No de Client </th>
+      <th width="103">No Cheque</th>
+      <th width="147">Mois (mm/yy)</th>
+      <th width="79">Montant</th>
+      <th width="89"></th>
+      <th width="14" class="last">&nbsp;</th>
+    </tr>
+  </thead>
+<!-- BEGIN switch_submit_final -->
+  <tfoot>
+    <tr>
+      <td class="first">&nbsp;</td>
+      <form action = "index.php?pageload=16" method = POST>
+        <td colspan="5">Verifier que vous avez ajouter les donnee avant de les finalizer
+          <input type="hidden" name="input" value="119.500|" /></td>
+        <td><input  class="but" name="final" type="submit" value = "Valider" /></td>
+        <td class="last">&nbsp;</td>
+      </form>
+    </tr>
+  </tfoot>
+<!-- END switch_submit_final -->
+
+  <tbody>
+    <tr class="line">
+      <form action = "index.php?pageload=16" method = POST>
+        <td>&nbsp;</td>
+        <td><input name = "month1" type ="text" id="month1" size="2" maxlength="2" />
+            <input name = "day1" type ="text" id="day" size="2" maxlength="2" />
+            <input name = "year1" type ="text" id="year1" size="4" maxlength="4" /></td>
+        <td><input name = "CLIENT_ID" type ="text" id="CLIENT_ID" size="2" maxlength="6" /></td>
+        <td><input name = "CHECK" type ="text" id="CHECK" size="2" maxlength="6" /></td>
+        <td><input name = "month2" type ="text" id="month2" size="2" maxlength="2" />
+            <input name = "year2" type ="text" id="year2" size="4" maxlength="4" /></td>
+        <td><input name = "MONTANT" type ="text" id="MONTANT" size="2" maxlength="8" /></td>
+        <td colspan="2"><input type="hidden" name="pageload" value="14" />
+            <input type="hidden" name="input" value="{HIDDEN}" />
+        <input type="hidden" name="position" value="{POSITION}" />
+        <input name="add" type="submit"  class="but" style="vertical-align:absbottom;" tabindex="30" value = "Add" />
+  </form>
+    </tr>
+<!-- BEGIN switch_post_entries --> 	
+<!-- BEGIN row -->
+    <tr class="{switch_post_entries.row.LINE}">
+      <form action = "index.php?pageload=16" method = POST>
+        <td>&nbsp;</td>
+        <td>{switch_post_entries.row.DATE1} </td>
+        <td>{switch_post_entries.row.CLIENT_ID} </td>
+        <td>{switch_post_entries.row.CHECK} </td>
+        <td>{switch_post_entries.row.DATE2} </td>
+        <td>{switch_post_entries.row.MONTANT} </td>
+        <td colspan="2"><input type="hidden" name="pageload" value="14" />
+            <input type="hidden" name="input" value="{HIDDEN}" />
+            <input type="hidden" name="row" value="{switch_post_entries.row.POSITION}" />
+            <input  class="but" name="remove" type="submit" value = "supr." onclick="return confirmLink(this, 'suprimer cette donne')"/>
+            <input  class="but" name="edit" type="submit" value = "edite" />        </td>
+      </form>
+    </tr>
+<!-- END row --> 
+<!-- END switch_post_entries --> 
+  </tbody>
+
+</table>

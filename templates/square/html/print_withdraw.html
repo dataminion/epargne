@@ -1,0 +1,121 @@
+<h1>RETRAIT SUR COMPTE</h1>
+<table cellspacing="0"class="form"> 
+<form id="monthview" action = "withdraw.php" method = POST >
+    <tr class="header"> 
+        <th colspan="6">CLIENT:{CUST_ID}</th> 
+        <td>&nbsp;</td>
+    </tr> 
+    <tr> 
+        <th scope="row" colspan="2">Numero de Cheque:</th> 
+        <td colspan="5" width="400"><input name="check" type="text" size="10" /></td>
+    </tr> 
+    
+    <tr class="header"> 
+        <th colspan="7">{DATE}</th>
+    </tr>
+    
+    <!-- BEGIN a -->
+<tbody id="money">
+    <tr  class="header"> 
+		<th colspan="7"><span class="middle">{SHOWING_DATE} Mise:{SHOWING_GOAL} </span></th> 
+    </tr> 
+	
+    <tr> 
+		<th scope="row">Taux Mensuel: </th> 
+		<td >une (1) mise ({SHOWING_GOAL})</td>
+		<td  width="35"><img src="templates/square/img/ico/{1}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{2}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{3}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{4}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{5}.png"/></td>
+    </tr> 
+    
+	<tr> 
+		<th scope="row">Total cotisation du mois:</th> 
+		<td >{GROSS}</td> 
+		<td  width="35"><img src="templates/square/img/ico/{6}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{7}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{8}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{9}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{10}.png"/></td>
+	</tr> 
+    
+    <tr> 
+		<th scope="row">Commision du mois:</th> 
+		<td >{SHOWING_GOAL}</td> 
+		<td  width="35"><img src="templates/square/img/ico/{11}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{12}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{13}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{14}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{15}.png"/></td>
+    </tr> 
+    
+    <tr> 
+		<th scope="row">Montant net a virer:</th> 
+		<td >{NET}</td> 
+		<td  width="35"><img src="templates/square/img/ico/{16}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{17}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{18}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{19}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{20}.png"/></td>
+    </tr>
+    <tr> 
+		<th scope="row">&nbsp;</th> 
+		<td >
+		</td> 
+		<td  width="35"><img src="templates/square/img/ico/{21}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{22}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{23}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{24}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{25}.png"/></td>
+    </tr> 
+    <tr> 
+		<th scope="row">&nbsp;</th> 
+		<td >&nbsp;</td> 
+		<td  width="35"><img src="templates/square/img/ico/{26}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{27}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{28}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{29}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{30}.png"/></td>
+    </tr> 
+    <tr> 
+	    <th scope="row">&nbsp;</th> 
+	    <td >
+		</td> 
+		<td  width="35"><img src="templates/square/img/ico/{31}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/d.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/d.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/d.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/d.png"/></td>
+    </tr>	
+	</tbody>
+    <!-- END a -->
+	<tr> 
+        <th scope="row" colspan="2">Net pour le Mois:</th> 
+        <td colspan="5">{NET}</td>
+    </tr>       
+        <tr class="header"> 
+        <th colspan="7">VALIDATION EST FINALE</th>
+    </tr>
+    
+    <tr>
+        <th>Montant a retraiter:
+        </th>
+        <td colspan="6">
+        {TOTAL}  
+        </td>
+    </tr>
+    
+    <tr>
+        <th>&nbsp;
+        
+        </th>
+        <td colspan="6">
+            <input type="submit"  id="valid" name = "submit" value="Valider" onClick="javascript:form.submit();">
+            <input type="hidden" name="cid" value="{CUST_ID}" />
+            <input type="hidden" name="date" value="{NoDATE}" />
+            <input type="hidden" name="NET" value="{NET}" />
+        </td>
+    </tr>
+</form>
+</table>

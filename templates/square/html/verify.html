@@ -1,0 +1,349 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Epargne Planifiee::SqlSaver1.0</title>
+<meta http-equiv="Content-Language" content="English" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="boxes.css" media="screen" />
+<link rel="stylesheet" type="text/css" href="tables.css" media="screen" />
+<script language="JavaScript" type="text/javascript">
+<!-- hide from older browsers
+function displayMenu(currentMenu) {
+var thisMenua = document.getElementById(currentMenu+'1').style
+var thisMenub = document.getElementById(currentMenu+'2').style
+var thisMenuc = document.getElementById(currentMenu+'3').style
+// Custom JavaScript function that expands/contracts menus as
+// appropriate
+// If the menu is expanded, contract it
+if (thisMenua.display == "table-header-group") {
+thisMenua.display = "none"
+thisMenub.display = "none"
+thisMenuc.display = "none"
+}
+else {
+// If the menu is contracted, expand it
+thisMenua.display = "table-header-group"
+thisMenub.display = "table-row-group"
+thisMenuc.display = "table-footer-group"
+}
+return false
+}
+// End hiding-->
+<!-- hide from older browsers
+function displayZone(currentMenu) {
+var thisMenua = document.getElementById(currentMenu).style
+// Custom JavaScript function that expands/contracts menus as
+// appropriate
+// If the menu is expanded, contract it
+if (thisMenua.display == "table-row") {
+thisMenua.display = "none"
+}
+else {
+// If the menu is contracted, expand it
+thisMenua.display = "table-row"
+}
+return false
+}
+// End hiding-->
+</script>
+<style type="text/css">
+.hat {display:none; margin-left:20px}
+.zone{display:none;}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <div id="header">
+    <h1><a href="#">Epargne Planifiee</a></h1>
+    <h2>SqlSaver1.0, Page D'aceuille</h2>
+  </div>
+</div>
+<hr />
+<div id="wrap">
+  <div class="dropdown">
+    <div class="left_edge">&nbsp;</div>
+    <div class="mid">
+      <ul class="Menu">
+        <li> <a class="MenuItem" href="logout.php" tabindex="0">Transactions</a> </li>
+        <li> <a class="MenuItem" href="logout.php" tabindex="0">Donn&eacute;es Client&egrave;le</a> </li>
+        <li> <a class="MenuItem"  href="logout.php" tabindex="0">Gestion des Comptes</a> </li>
+        <li > <a class="MenuItemLast" href="logout.php" tabindex="0" >Fermer le session</a> </li>
+      </ul>
+    </div>
+    <div class="right_edge">&nbsp;</div>
+  </div>
+  <div id="top"> </div>
+  <div id="content">
+    <div class="verify">
+    <form action = "confirm.php" method="POST">
+      <fieldset>
+      	<legend>  
+			Donnee a Verifier
+		</legend>
+        <table class="tabl" width="100%" cellspacing="0" summary="Data set of deposits to be approved from a given day.">
+          <caption>
+          <a href="#" onClick="return displayMenu('26 -- 1 -- 2009');">26 -- 1 -- 2009</a>
+          </caption>
+          
+          <thead class="hat" id="26 -- 1 -- 20091">
+            <tr>
+              <th>Utiliseur</th>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Mise</th>
+              <th>Deposer</th>
+              <th>Selectioner</th>
+            </tr>
+          </thead>
+          <tfoot class="hat" id="26 -- 1 -- 20093">
+            <tr>
+              <th colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+          </tfoot>
+          <tbody class="hat" id="26 -- 1 -- 20092">
+            <tr>
+              <th class="empty" colspan="6"><h3><a href="#" onClick="return displayZone('26 -- 1 -- 2009z1');">ZONE : 1</a></h3></th>
+            </tr>
+            <tr class="zone" id="26 -- 1 -- 2009z1">
+              <td>batoure</td>
+              <td><a href='index.php?pageload=7&cid=4'>4</a></td>
+              <td>dafia  assana</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td><input type="checkbox" name="check1" id="checkbox" />
+                <input type="hidden" name="tran1" value="1399" />
+                <input type="hidden" name="goal1" value="1000" /></td>
+            </tr>
+            <tr>
+              <th class="empty" colspan="6"><h3>ZONE : 2</h3></th>
+            </tr>
+            <tr class="line">
+              <td>batoure</td>
+              <td><a href='index.php?pageload=7&cid=557'>14</a></td>
+              <td>kassa bere jules</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td><input type="checkbox" name="check2" id="checkbox" />
+                <input type="hidden" name="tran2" value="1400" />
+                <input type="hidden" name="goal2" value="1000" /></td>
+            </tr>
+            
+          </tbody>
+          <input type="hidden" name="nTrans" value="11" />
+        </table>
+        <table class="tabl" width="100%" cellspacing="0" summary="Data set of deposits to be approved from a given day.">
+          <caption>
+          <a href="#" onClick="return displayMenu('29 -- 1 -- 2009');">29 -- 1 -- 2009</a>
+          </caption>
+          <thead class="hat" id="29 -- 1 -- 20091">
+            <tr>
+              <th>Utiliseur</th>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Mise</th>
+              <th>Deposer</th>
+              <th>Selectioner</th>
+            </tr>
+          </thead>
+          <tfoot class="hat" id="29 -- 1 -- 20093">
+            <tr>
+              <th colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+          </tfoot>
+          <tbody class="hat" id="29 -- 1 -- 20092">
+            <tr>
+              <th class="empty" colspan="6"><h3>ZONE : 1</h3></th>
+            </tr>
+            <tr class="noline">
+              <td>batoure</td>
+              <td><a href='index.php?pageload=7&cid=1'>1</a></td>
+              <td>djihnto  jeannette</td>
+              <td>500</td>
+              <td>0</td>
+              <td><input type="checkbox" name="check3" id="checkbox" />
+                <input type="hidden" name="tran3" value="1403" />
+                <input type="hidden" name="goal3" value="500" /></td>
+            </tr>
+          </tbody>
+          <input type="hidden" name="nTrans" value="11" />
+        </table>
+        <table class="tabl" width="100%" cellspacing="0" summary="Data set of deposits to be approved from a given day.">
+          <caption>
+          <a href="#" onClick="return displayMenu('30 -- 1 -- 2009');">30 -- 1 -- 2009</a>
+          </caption>
+          <thead class="hat" id="30 -- 1 -- 20091">
+            <tr>
+              <th>Utiliseur</th>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Mise</th>
+              <th>Deposer</th>
+              <th>Selectioner</th>
+            </tr>
+          </thead>
+          <tfoot class="hat" id="30 -- 1 -- 20093">
+            <tr>
+              <th colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+          </tfoot>
+          <tbody class="hat" id="30 -- 1 -- 20092">
+            <tr>
+              <th class="empty" colspan="6"><h3>ZONE : 1</h3></th>
+            </tr>
+            <tr class="noline">
+              <td>batoure</td>
+              <td><a href='index.php?pageload=7&cid=1'>1</a></td>
+              <td>djihnto  jeannette</td>
+              <td>500</td>
+              <td>0</td>
+              <td><input type="checkbox" name="check4" id="checkbox" />
+                <input type="hidden" name="tran4" value="1408" />
+                <input type="hidden" name="goal4" value="500" /></td>
+            </tr>
+            <tr>
+              <th class="empty" colspan="6"><h3>ZONE : 2</h3></th>
+            </tr>
+            <tr class="line">
+              <td>batoure</td>
+              <td><a href='index.php?pageload=7&cid=545'>2</a></td>
+              <td>balogou roger</td>
+              <td>300</td>
+              <td>300</td>
+              <td><input type="checkbox" name="check5" id="checkbox" />
+                <input type="hidden" name="tran5" value="1405" />
+                <input type="hidden" name="goal5" value="300" /></td>
+            </tr>
+            <tr class="noline">
+              <td>batoure</td>
+              <td><a href='index.php?pageload=7&cid=545'>2</a></td>
+              <td>balogou roger</td>
+              <td>300</td>
+              <td>60000</td>
+              <td><input type="checkbox" name="check6" id="checkbox" />
+                <input type="hidden" name="tran6" value="1407" />
+                <input type="hidden" name="goal6" value="300" /></td>
+            </tr>
+          </tbody>
+          <input type="hidden" name="nTrans" value="11" />
+        </table>
+        <table class="tabl" width="100%" cellspacing="0" summary="Data set of deposits to be approved from a given day.">
+          <caption>
+         <a href="#" onClick="return displayMenu('3 -- 2 -- 2009');"> 3 -- 2 -- 2009</a>
+          </caption>
+          <thead class="hat" id="3 -- 2 -- 20091">
+            <tr>
+              <th>Utiliseur</th>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Mise</th>
+              <th>Deposer</th>
+              <th>Selectioner</th>
+            </tr>
+          </thead>
+          <tfoot  class="hat" id="3 -- 2 -- 20093">
+            <tr>
+              <th colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+          </tfoot>
+          <tbody class="hat" id="3 -- 2 -- 20092">
+            <tr>
+              <th class="empty" colspan="6"><h3>ZONE : 1</h3></th>
+            </tr>
+            <tr class="noline">
+              <td>batoure</td>
+              <td><a href='index.php?pageload=7&cid=1'>1</a></td>
+              <td>djihnto  jeannette</td>
+              <td>500</td>
+              <td>500</td>
+              <td><input type="checkbox" name="check7" id="checkbox" />
+                <input type="hidden" name="tran7" value="1409" />
+                <input type="hidden" name="goal7" value="500" /></td>
+            </tr>
+          </tbody>
+          <input type="hidden" name="nTrans" value="11" />
+        </table>
+        <table class="tabl" width="100%" cellspacing="0" summary="Data set of deposits to be approved from a given day.">
+          <caption>
+         	<a href="#" onClick="return displayMenu('5 -- 2 -- 2009');"> 5 -- 2 -- 2009</a>
+          </caption>
+          <thead class="hat" id="5 -- 2 -- 20091">
+            <tr>
+              <th>Utiliseur</th>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Mise</th>
+              <th>Deposer</th>
+              <th>Selectioner</th>
+            </tr>
+          </thead>
+          <tfoot class="hat" id="5 -- 2 -- 20093">
+            <tr>
+              <th colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+          </tfoot>
+          <tbody class="hat" id="5 -- 2 -- 20092">
+            <tr>
+              <th class="empty" colspan="6"><h3>ZONE : 1</h3></th>
+            </tr>
+            <tr class="noline">
+              <td>promoteur1</td>
+              <td><a href='index.php?pageload=7&cid=1'>1</a></td>
+              <td>djihnto  jeannette</td>
+              <td>500</td>
+              <td>500</td>
+              <td><input type="checkbox" name="check8" id="checkbox" />
+                <input type="hidden" name="tran8" value="1410" />
+                <input type="hidden" name="goal8" value="500" /></td>
+            </tr>
+            <tr class="line">
+              <td>promoteur1</td>
+              <td><a href='index.php?pageload=7&cid=1'>1</a></td>
+              <td>djihnto  jeannette</td>
+              <td>500</td>
+              <td>1000</td>
+              <td><input type="checkbox" name="check9" id="checkbox" />
+                <input type="hidden" name="tran9" value="1412" />
+                <input type="hidden" name="goal9" value="500" /></td>
+            </tr>
+            <tr class="noline">
+              <td>promoteur1</td>
+              <td><a href='index.php?pageload=7&cid=1'>1</a></td>
+              <td>djihnto  jeannette</td>
+              <td>500</td>
+              <td>1000</td>
+              <td><input type="checkbox" name="check10" id="checkbox" />
+                <input type="hidden" name="tran10" value="1413" />
+                <input type="hidden" name="goal10" value="500" /></td>
+            </tr>
+            <tr class="line">
+              <td>promoteur1</td>
+              <td><a href='index.php?pageload=7&cid=4'>4</a></td>
+              <td>dafia  assana</td>
+              <td>1000</td>
+              <td>1000</td>
+              <td><input type="checkbox" name="check11" id="checkbox" />
+                <input type="hidden" name="tran11" value="1411" />
+                <input type="hidden" name="goal11" value="1000" /></td>
+            </tr>
+          </tbody>
+          <input type="hidden" name="nTrans" value="11" />
+        </table>
+      </fieldset>
+   <fieldset>
+      <h3>Qu'est que vous voulez faire avec ces donne:</h3>
+      
+        <input class="buttons" id="delete" type="submit" name="delete" value = "Supprimer" onclick="return confirmLink(this, 'suprimer')"   src="img/ico/delete.png"/>
+      <!-- <input type="submit" value = "Editer" name="edit" onclick="return confirmLink(this, 'editer')" align="right" src="formatting/img/edit.png"/> -->
+        <input class="buttons" id="ok" type="submit"  name="confirm" value = "Valider" onclick="return confirmLink(this, 'verifier')"src="img/ico/ok.png" />
+      </fieldset>
+      </div>
+    </form>
+  </div>
+  <div id="bottom"> </div>
+  <div id="footer">
+    <div> <img src="img/logo_DTR.png"alt="DTR Atacora-Donga" /> <img src="img/logo_sep.png"alt="|" /> <img src="img/logo_pc.png"alt="Peace Corps Benin" /> </div>
+  </div>
+</div>
+</body>
+</html>

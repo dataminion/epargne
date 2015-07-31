@@ -1,0 +1,46 @@
+
+<h1>Fin de Jour {DATE}</h1>
+<br />
+<!-- BEGIN deposit -->
+<table class="tabl" width="80%" cellspacing="0" summary="Somaire des donnes journalier.">
+	<caption>Somaire Depose Pour {FIRST} {LAST}</caption>
+	<thead>
+		<tr>
+			<th class="empty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			<th>Zone</th>
+			<th># Transaction</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+    <tbody>
+            <tr class="{deposit.SWITCH}">
+                <th class="empty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <td>{deposit.ZONE}</td>
+                <td>{deposit.TRANSACTION}</td>
+                <td>{deposit.DEPOSIT}</td>
+            </tr>
+    </tbody>
+</table>
+<!-- END deposit -->
+<br />
+<!-- BEGIN deposit_by_page -->
+<table class="tabl" width="80%" cellspacing="0" summary="Somaire des donnes journalier.">
+   	<caption>Total Entree Par Page</caption>
+   <thead>
+		<tr>
+			<th class="empty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+			<th># Transaction</th>
+			<th>Total</th>
+		</tr>
+	</thead>
+	<tbody>
+	<!-- BEGIN line -->
+            <tr class="{deposit_by_page.line.SWITCH}">
+                <th class="empty">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+                <td>{deposit_by_page.line.TRANSACTION}</td>
+                <td>{deposit_by_page.line.DEPOSIT}</td>
+            </tr>
+    <!-- END line -->
+	</tbody>
+</table>
+<!-- END deposit_by_page -->

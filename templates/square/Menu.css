@@ -1,0 +1,106 @@
+@charset "UTF-8";
+/* The outermost container of the Menu Bar, an auto width box with no margin or padding */
+ul.MenuBarHorizontal{	
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	border-style: none;
+	margin: 0 0px 0 0px;
+	padding:10px 0  0 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: default;
+	width: auto;
+	letter-spacing: -2px;
+	list-style-type: none;
+}
+/* Set the active Menu Bar with this class, currently setting z-index to accomodate IE rendering bug: http://therealcrisp.xs4all.nl/meuk/IE-zindexbug.html */
+ul.MenuBarActive{
+	z-index: 1200;
+}
+/* Menu item containers, position children relative to this container and are a fixed width */
+ul.MenuBarHorizontal li{		
+	width:auto;
+	border-collapse: collapse;
+	border-width: 0px 0px 0px 0px;
+	border-style: none;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	font-size: 100%;
+	cursor: pointer;
+	float: left;
+}
+/* Submenus should appear below their parent (top: 0) with a higher z-index, but they are initially off the left side of the screen (-1000em) */
+ul.MenuBarHorizontal ul{
+	margin: 0 0 0 0px;
+	padding: 0 0 20px 0;
+	border-width: 0 0 0 0;
+	border-style: none;
+	list-style-type: none;
+	z-index: 1000;
+	cursor: default;
+	position: absolute;
+	left: -1000em;
+	background:url(img/menu_sub_b.png) bottom center no-repeat;
+	height:auto;
+	width:170px;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to auto so it comes onto the screen below its parent menu item */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible{
+	left: auto;
+}
+/* Menu item containers are same fixed width as parent */
+ul.MenuBarHorizontal ul li{
+	border-collapse: collapse;
+	width:auto;
+	background:url(img/menu_sub_y.png) center repeat-y;
+}
+/* Submenu that is showing with class designation MenuBarSubmenuVisible, we set left to 0 so it comes onto the screen */
+ul.MenuBarHorizontal ul.MenuBarSubmenuVisible ul.MenuBarSubmenuVisible{
+	left: auto;
+	top: 0;
+}
+
+/*******************************************************************************
+
+ DESIGN INFORMATION: describes color scheme, borders, fonts
+
+ *******************************************************************************/
+
+/* Menu items are a light gray block with padding and no text decoration */
+ul.MenuBarHorizontal a{
+	text-decoration: none;
+	text-align:center;
+	text-decoration:none;
+	cursor: pointer;
+	padding: 0 0 0 0;
+	margin: 0 3.5px 0 3.5px;
+	display: block;
+	width:9em;
+	font-size:18px;
+}
+.MenuBarItemSubmenu{
+	height:37px;
+}
+ul.MenuBarHorizontal a.MenuBarItemLAST{
+	height:28;
+	}
+ul.MenuBarHorizontal ul a{
+	margin:0;
+	padding: 0;
+	width:170px;
+	text-decoration: none;	
+	text-align:center;
+	cursor: pointer;
+	display:block;
+	font-size:16px;
+}
+/* Menu items that have mouse over or focus have a blue background and white text */
+ul.MenuBarHorizontal a:hover, ul.MenuBarHorizontal a:focus, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible{
+	display: block;
+	}
+/* Menu items that are open with submenus are set to MenuBarItemHover with a blue background and white text */
+ul.MenuBarHorizontal a.MenuBarItemHover, ul.MenuBarHorizontal a.MenuBarItemSubmenuHover, ul.MenuBarHorizontal a.MenuBarSubmenuVisible{
+	/*border:#000 solid 1px 1px 1px 1px;*/
+}
+

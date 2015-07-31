@@ -1,0 +1,41 @@
+			<!-- BEGIN switch_post_entries -->
+			<table id="deposit"
+			    summary="Data set of deposits to be approved from a given day.">
+                <caption> Registered Users</caption>
+			        <thead>
+			            <tr>
+   			                <th> Numero d'Utilisateur </th>
+                            <th colspan="3"> Nom </th>
+			                <th> Login </th>
+			                <th colspan="2"></th>
+			            </tr>
+			        </thead>			
+					<tfoot>
+			            <tr>			            
+			                <form action = "index.php?pageload=9" method = POST>
+			                <td colspan="5"><input type="hidden" name="input" value="{HIDDEN}" /></td>
+			                <td><input name="add" type="image" value = "adjouter" src="templates/square/img/ico/add_emp.png" onClick="javascript:form.submit()"/></td>
+			                </form>
+			            </tr>
+			        </tfoot>
+					<tbody>
+					<!-- BEGIN row -->
+						<tr class="{switch_post_entries.row.LINE}">
+						<form action = "index.php?pageload=9" method = POST>
+							<td>{switch_post_entries.row.EMP_ID} </td>
+                            <td>{switch_post_entries.row.LAST} </td>
+                            <td></td>
+                            <td>{switch_post_entries.row.FIRST} </td>
+							<td> {switch_post_entries.row.USER_ID}</td>
+							<td width="91">
+								<input type="hidden" name="pageload" value="9" />
+								<input type="hidden" name="emp" value="{switch_post_entries.row.EMP_ID}" />
+								<input name="remove" type="image" value = "supr." onclick="return confirmLink(this, 'suprimer cet utilisateur')"src="templates/square/img/ico/delete.png"/>
+								<input name="edit" type="image" value = "edite" src="templates/square/img/ico/edit.png" onClick="javascript:form.submit()"/>
+							</td>
+						</form>
+						</tr>
+					<!-- END row -->
+					</tbody>
+				</table>
+				<!-- END switch_post_entries -->

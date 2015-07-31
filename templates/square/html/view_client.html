@@ -1,0 +1,249 @@
+<!-- BEGIN switch_cust_search -->
+<h1>Chercher un Client</h1>
+<h2>{ERROR}</h2>
+ <div class="deposit">
+	<form action = "index.php?pageload=7" method = POST>
+        <fieldset class="a">
+                <label class="client"for="scid">Client numero:</label>
+                <input type = "num" id="client" name = "scid" class="Submit" />
+            <!-- BEGIN switch_zone -->
+                <label class="zone" for="szone">Zone Client:</label>
+                <input type = "num" id="zone" name = "szone" class="Submit" />
+            <!-- END switch_zone -->    
+        </fieldset>
+        <fieldset class="b">
+            	<input type = "submit" value = "" name = "Submit" id="Submit" class="search" />
+        </fieldset>		
+	</form>
+    <script type="text/javascript">
+			// <![CDATA[
+				window.setTimeout('PMA_focusInput("client","zone")', 500);
+			// ]]>
+	</script>
+     </div>
+<!-- END switch_cust_search -->
+<!-- BEGIN switch_cust_display -->
+<!-- BEGIN switch_no_goal --> 
+	<div class="notice">
+        <h4>Cette client n'a pas un mise enregistrer veuiller regler cette problem</h4>
+    </div>
+<!-- END switch_no_goal -->
+<table cellspacing="0"id="cust_sheet" width="100%"> 
+<tbody>
+	<tr class="header"> 
+		<th colspan="6">Client numero: {CUST_ID}</th> 
+		<td width="35">edit</td>
+    </tr> 
+   
+    <tr> 
+		<th width="200" scope="row">Nom du Compte:</th> 
+		<td colspan="6"><h1 align="left">{DESCR}</h1></td> 
+    </tr> 
+    
+    <tr> 
+		<th scope="row">Numero de compte CLCAM:</th> 
+		<td colspan="6">{CLCAM}</td>
+    </tr> 
+    
+    <tr> 
+		<th scope="row">Etablir par agent no:</th> 
+		<td  colspan="6">{SIGNING_AGENT}</td> 
+    </tr> 
+    
+    <tr> 
+		<th scope="row">Date comencement:</th> 
+		<td  colspan="6">{SIGNING_DATE}</td> 
+    </tr> 
+
+    <tr> 
+		<th scope="row">Etat du compte:</th> 
+		<td colspan="6">{STATUS}</td> 
+    </tr> 
+    
+    <tr> 
+		<th scope="row"><a title="Goal" href="javascript:openMise('119','500')">Mise:</a></th> 
+		<td colspan="6">
+		<!-- BEGIN goal -->
+			<div class="button">{CURRENT_GOAL}</div>
+		<!-- END goal -->  
+		<!-- BEGIN goal_edit -->
+			<div class="button">
+				<a title="Goal" href="javascript:openMise('{CUST_ID}','{CURRENT_GOAL}')">{CURRENT_GOAL}</a>
+			</div>
+		<!-- END goal_edit -->    
+		</td> 
+    </tr>
+</tbody>
+<!-- BEGIN person -->
+<tbody id="person">
+	<tr class="header"> 
+		<th colspan="4">Information de Contact</th> 
+		<td colspan="2">Adjouter</td>
+		<td width="35">Edit</td>
+    </tr> 
+
+    <tr> 
+		<th scope="row">Prenom</th> 
+		<td>{switch_cust_display.person.FIRST_NAME} </td>
+		<td width="35" rowspan="4"></td>
+		<th colspan="4" rowspan="5">
+			<form method="post" action="" onSubmit="return false;">
+				<input type="image" class="pic" name="client_img" src="img/client/view_picture.php?cid={switch_cust_display.person.UNIQUE}" onClick="javascript:form.submit(); openPicture({CUST_ID},{switch_cust_display.person.UNIQUE});"/>
+			</form>
+		</th>
+    </tr> 
+
+    <tr> 
+		<th scope="row">Nom</th> 
+		<td>{switch_cust_display.person.LAST_NAME}</td>
+    </tr> 
+
+    <tr> 
+		<th scope="row">Sexe</th> 
+		<td>{switch_cust_display.person.SEX}</td> 
+    </tr> 
+
+    <tr> 
+		<th scope="row">Date de Naisance</th> 
+		<td>{switch_cust_display.person.D_O_B}</td> 
+    </tr>
+     
+    <tr> 
+		<th scope="row">Profession</th> 
+		<td>{switch_cust_display.person.OCCUPATION}</td>
+		<td width="35"></td>
+    </tr> 
+</tbody>
+<!-- END person -->
+
+
+<!-- BEGIN a -->	
+<tbody id="money">
+    <tr  class="header"> 
+		<th colspan="7"><span class="middle">{SHOWING_DATE} Mise:{SHOWING_GOAL} </span></th> 
+    </tr> 
+	
+    <tr> 
+		<th scope="row">Taux Mensuel: </th> 
+		<td >une (1) mise ({SHOWING_GOAL})</td>
+		<td  width="35"><img src="templates/square/img/ico/{1}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{2}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{3}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{4}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{5}.png"/></td>
+    </tr> 
+    
+	<tr> 
+		<th scope="row">Total cotisation du mois:</th> 
+		<td >{GROSS}</td> 
+		<td  width="35"><img src="templates/square/img/ico/{6}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{7}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{8}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{9}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{10}.png"/></td>
+	</tr> 
+    
+    <tr> 
+		<th scope="row">Commision du mois:</th> 
+		<td >{SHOWING_GOAL}</td> 
+		<td  width="35"><img src="templates/square/img/ico/{11}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{12}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{13}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{14}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{15}.png"/></td>
+    </tr> 
+    
+    <tr> 
+		<th scope="row">Montant net a virer:</th> 
+		<td >{NET}</td> 
+		<td  width="35"><img src="templates/square/img/ico/{16}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{17}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{18}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{19}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{20}.png"/></td>
+    </tr>
+    <tr> 
+		<th scope="row">Visualizer un mois different:</th> 
+		<td >
+			<form id="monthview" action = "index.php?pageload=7" method = POST >
+				<select name = "date" onChange="javascript:form.submit();">
+					<option value="">(Mois)...</option>
+					<!-- BEGIN drop -->
+					<option value = "{switch_cust_display.a.drop.DATE_VALUE}">{switch_cust_display.a.drop.DATE_NAME}</option>
+					<!-- END drop -->
+				</select>
+				<input type="hidden" name="cid" value="{CUST_ID}" />
+			</form>
+		</td> 
+		<td  width="35"><img src="templates/square/img/ico/{21}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{22}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{23}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{24}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{25}.png"/></td>
+    </tr> 
+    
+    <tr> 
+		<th scope="row">&nbsp;</th> 
+		<td >&nbsp;</td> 
+		<td  width="35"><img src="templates/square/img/ico/{26}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{27}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{28}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{29}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/{30}.png"/></td>
+    </tr> 
+	
+	<!-- BEGIN pull -->
+    <tr> 
+	    <th scope="row">&nbsp;</th> 
+	    <td >
+			<form id="monthview" action = "index.php?pageload=2" method = POST >
+				<input type="submit" name = "print" value="Retrait" onClick="return confirmLink(this, 'retraiter cette argent'); javascript:form.submit();">
+				<input type="hidden" name="cid" value="{CUST_ID}" />
+				<input type="hidden" name="date" value="{NoDATE}" />
+			</form>
+		</td> 
+		<td  width="35"><img src="templates/square/img/ico/{31}.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/d.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/d.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/d.png"/></td>
+		<td  width="35"><img src="templates/square/img/ico/d.png"/></td>
+    </tr> 	
+	<!-- END pull -->	
+	</tbody>
+<!-- END a -->
+<!-- BEGIN sum -->
+    <tr class="header"> 
+      <th colspan="7"><span class="middle">Somation MENSUEL</span></th> 
+    </tr> 
+
+	<tr> 
+      <th scope="row">Total cotisations pour Janvier:</th> 
+      <td colspan="6" >10.000</td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Total cotisations pour Fevrier:</th> 
+      <td colspan="6" >15.000</td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Total cotisations pour Mars:</th> 
+      <td colspan="6" >12.000</td> 
+    </tr> 
+    
+    <tr class="header"> 
+      <th colspan="7"><span class="middle">Somation Annuel </span></th> 
+    </tr> 
+
+	<tr> 
+      <th scope="row">Total cotisations pour l'anee:</th> 
+      <td colspan="6" >1.000.000</td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Total des retraits pour l'anee:</th> 
+      <td colspan="6" >500.000</td> 
+    </tr> 
+<!-- END sum -->	
+</table>
+<!-- END switch_cust_display -->

@@ -1,0 +1,66 @@
+<!-- BEGIN Date -->
+    <div class="verify">
+    <form action = "confirm.php" method="POST">
+      <fieldset>
+      	<legend>  
+			Donnee a Verifier
+		</legend>
+ <!-- BEGIN Block -->
+		<table class="tabl" width="100%" cellspacing="0" summary="Data set of deposits to be approved from a given day.">
+          <caption>
+          <a href="#" onClick="return displayMenu('{Date.Block.DAY} -- {Date.Block.MONTH} -- {Date.Block.YEAR}');">{Date.Block.DAY} -- {Date.Block.MONTH} -- {Date.Block.YEAR}</a>
+          </caption>
+          
+          <thead class="hat" id="{Date.Block.DAY} -- {Date.Block.MONTH} -- {Date.Block.YEAR}1">
+            <tr>
+              <th>Utiliseur</th>
+              <th>ID</th>
+              <th>Nom</th>
+              <th>Mise</th>
+              <th>Deposer</th>
+              <th>Selectioner</th>
+            </tr>
+          </thead>
+          <tfoot class="hat" id="{Date.Block.DAY} -- {Date.Block.MONTH} -- {Date.Block.YEAR}3">
+            <tr>
+              <th colspan="6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+            </tr>
+          </tfoot>
+          <tbody class="hat" id="{Date.Block.DAY} -- {Date.Block.MONTH} -- {Date.Block.YEAR}2">
+<!-- BEGIN Zone -->
+            <tr>
+              <th class="empty" colspan="6"><h3><a href="#" onClick="return displayZone('{Date.Block.DAY} -- {Date.Block.MONTH} -- {Date.Block.YEAR}1');">ZONE : {Date.Block.Zone.ZONE}</a></h3></th>
+            </tr>
+<!-- BEGIN Data -->
+            <tr class="{Date.Block.Zone.Data.LINE}" id="{Date.Block.DAY} -- {Date.Block.MONTH} -- {Date.Block.YEAR}z1">
+				<td>{Date.Block.Zone.Data.USER}</td>
+				<td><a href='index.php?pageload=7&cid={Date.Block.Zone.Data.CLIENT_ID}'>{Date.Block.Zone.Data.ID}</a></td>
+				<td>{Date.Block.Zone.Data.CLIENT_NAME}</td>
+				<td>{Date.Block.Zone.Data.GOAL}</td>
+				<td>{Date.Block.Zone.Data.DEPOSIT}</td>
+				<td>
+					<input type="checkbox" name="check{Date.Block.Zone.Data.ROW}" id="checkbox" />
+					<input type="hidden" name="tran{Date.Block.Zone.Data.ROW}" value="{Date.Block.Zone.Data.HIDDEN}" />
+					<input type="hidden" name="goal{Date.Block.Zone.Data.ROW}" value="{Date.Block.Zone.Data.GOAL}" />
+				</td>
+            </tr>
+<!-- END Data --> 
+<!-- END Zone -->            
+          </tbody>
+        </table>
+<!-- END Block -->
+      </fieldset>
+   <fieldset>
+      <h3>Qu'est que vous voulez faire avec ces donne:</h3>
+		
+         <input type="hidden" name="nTrans" value="{NTRANS}" />
+        <input class="buttons" id="delete" type="submit" name="delete" value = "Supprimer" onclick="return confirmLink(this, 'suprimer')"   src="img/ico/delete.png"/>
+      <!-- <input type="submit" value = "Editer" name="edit" onclick="return confirmLink(this, 'editer')" align="right" src="formatting/img/edit.png"/> -->
+        <input class="buttons" id="ok" type="submit"  name="confirm" value = "Valider" onclick="return confirmLink(this, 'verifier')"src="img/ico/ok.png" />
+      </fieldset>
+      </div>
+    </form>
+<!-- END Date -->
+<!-- BEGIN nodata -->
+		<h1>Tous les Donne sont verifier</h1>
+<!-- END nodata -->

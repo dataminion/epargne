@@ -1,0 +1,87 @@
+<div class="left"> 
+<!-- BEGIN switch_edit_entry -->
+	<div class="notice">
+        Vous avez choisis de changer le No {switch_edit_entry.CLIENT_ID} Avec un mise de {switch_edit_entry.GOAL}.
+    </div>
+<!-- END switch_edit_entry --> 
+<!-- BEGIN switch_deposit_done -->
+		<h4>Bon Travail Le Page est entree</h4>
+
+<!-- END switch_deposit_done -->
+<!-- BEGIN switch_invalid --> 
+	<div class="notice">
+        <h4>La donne entree est nonvalid</h4>
+    </div>
+<!-- END switch_invalid -->
+ <div class="deposit">
+            
+            <form = action = "index.php?pageload=14" method = POST>
+            	<fieldset class="a">
+                  <label class="client"for="CLIENT_ID">No de client</label>
+                    <input tabindex="11" type="text" id="CLIENT_ID" name="CLIENT_ID"  />
+                  <label class="goal" for="GOAL">Mise Deposer</label>
+                    <input tabindex="12" type ="text" id="GOAL" name = "GOAL" />
+                </fieldset>
+                <fieldset class="b">
+				<input type="hidden" name="input" value="{HIDDEN}" />
+		        <input type="hidden" name="position" value="{POSITION}" />
+		        <input tabindex=13 name="add" type="submit"  class="add" value = "             "/>
+                </fieldset>
+		    </form>
+            <script type="text/javascript">
+			// <![CDATA[
+				window.setTimeout('PMA_focusInput("CLIENT_ID","GOAL")', 500);
+			// ]]>
+			</script>
+  </div>
+  <!-- BEGIN switch_edit_entry -->
+  	<div class="notice">
+        Vous avez choisis de changer le No {switch_edit_entry.CLIENT_ID} Avec un mise de {switch_edit_entry.GOAL}.
+    </div>
+	<!-- END switch_edit_entry -->  
+	<!-- BEGIN switch_post_entries -->
+			<table id="deposit"
+			    summary="Data set of deposits to be approved from a given day.">
+			        <thead>
+			            <tr>
+   			                <th> Numero de Client </th>
+			                <th> Somme Depose </th>
+			                <th colspan="2"></th>
+			            </tr>
+			        </thead>
+	<!-- BEGIN final -->				
+					<tfoot>
+			            <tr>			            
+			                <form action = "index.php?pageload=14" method = POST>
+			                <td colspan="3">Verifier que vous avez ajouter les donnee avant de les finalizer<input type="hidden" name="input" value="{HIDDEN}" /></td>
+			                <td> <input  class="but" name="final" type="submit" value = "Valider" /></td>
+			                </form>
+			            </tr>
+			        </tfoot>
+	<!-- END final -->
+					<tbody>
+	<!-- BEGIN row -->
+						<tr class="{switch_post_entries.row.LINE}">
+						<form action = "index.php?pageload=14" method = POST>
+							<td>{switch_post_entries.row.CLIENT_ID} </td>
+							<td> {switch_post_entries.row.GOAL}</td>
+							<td width="150"></td>
+							<td width="91">
+								<input type="hidden" name="pageload" value="14" />
+								<input type="hidden" name="input" value="{HIDDEN}" />
+								<input type="hidden" name="row" value="{switch_post_entries.row.POSITION}" />
+								<input name="remove" type="image" value = "supr." onclick="return confirmLink(this, 'suprimer cette donne')"src="templates/square/img/ico/delete.png"/>
+								<input name="edit" type="image" value = "edite" src="templates/square/img/ico/edit.png" onClick="javascript:form.submit()"/>
+							</td>
+						</form>
+						</tr>
+	<!-- END row --> 
+					</tbody>
+				</table>
+<!-- END switch_post_entries --> 
+                <div class="dataloss" >
+                <h1>Si vous quitez cette page sans &lt;valider&gt;</h1> <h1>vous perdez les donnee si desous</h1>
+                </div>
+				</div>
+
+<div style="clear: both;"> </div>

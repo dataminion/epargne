@@ -1,0 +1,43 @@
+			<table id="list" width="100%" cellspacing="0" summary="Data set of the zones in a city which have been assigned to a promoter.">
+				<caption>Une Liste des Clients du Zone {ZONE}</caption>
+				<thead>
+					<tr>
+						<th>ID<a href="index.php?pageload=4&orderby=id&dir=1"><img src="templates/square/img/up.gif" width="22" height="21" onmouseover="src='templates/square/img/up_over.gif'" onMouseOut="src='templates/square/img/up.gif'" /></a><a href="index.php?pageload=4&orderby=id"><img src="templates/square/img/down.gif" width="22" height="21" onmouseover="src='templates/square/img/down_over.gif'" onmouseout="src='templates/square/img/down.gif'" /></a></th>
+						<th>Nom du Compte<a href="index.php?pageload=4&orderby=name&dir=1"><img src="templates/square/img/up.gif" width="22" height="21" onmouseover="src='templates/square/img/up_over.gif'" onMouseOut="src='templates/square/img/up.gif'" /></a><a href="index.php?pageload=4&orderby=name"><img src="templates/square/img/down.gif" width="22" height="21" onmouseover="src='templates/square/img/down_over.gif'" onmouseout="src='templates/square/img/down.gif'" /></a></th>
+						<th>Mise<a href="index.php?pageload=4&orderby=goal&dir=1"><img src="templates/square/img/up.gif" width="22" height="21" onmouseover="src='templates/square/img/up_over.gif'" onMouseOut="src='templates/square/img/up.gif'" /></a><a href="index.php?pageload=4&orderby=goal"><img src="templates/square/img/down.gif" width="22" height="21" onmouseover="src='templates/square/img/down_over.gif'" onmouseout="src='templates/square/img/down.gif'" /></a></th>
+					</tr>
+				</thead>
+				<tfoot>
+					<tr>
+						<td colspan="2">
+						Naviguer a la prochaine page ici -->
+						</td>
+						<td>
+<!-- BEGIN prev -->
+						<a href="index.php?pageload=4&page={prev.NEW_PAGE}&orderby={prev.ORDERBY}&dir={prev.DIRECTION}">
+						<img src="templates/square/img/left.gif" width="8" height="7" /></a>
+						&nbsp;
+<!-- END prev -->
+<!-- BEGIN page -->
+						<a class="{page.BOLD}" href="index.php?pageload=4&page={page.NEW_PAGE}&orderby={page.ORDERBY}&dir={page.DIRECTION}">{page.NEW_PAGE}</a>&nbsp;
+<!-- END page -->
+<!-- BEGIN next -->
+						<a href="index.php?pageload=4&page={next.NEW_PAGE}&orderby={next.ORDERBY}&dir={next.DIRECTION}">
+						<img src="templates/square/img/right.gif" width="8" height="7" />
+						</a>
+<!-- END next -->
+						</td>
+					</tr>
+				</tfoot>
+				<tbody>
+<!-- BEGIN line -->
+					<tr class="{line.SWITCH}">
+						<td><a href='index.php?pageload=7&cid={line.CUST_ID}'>{line.ID}</a></td>
+						<td><a href='index.php?pageload=7&cid={line.CUST_ID}'>{line.NAME}</a></td>
+						<td><a href='index.php?pageload=7&cid={line.CUST_ID}'>{line.GOAL}</a></td>
+					</tr>
+<!-- END line -->
+				</tbody>
+			</table>
+			
+<a href="index.php?pageload=17">Cliquer Ici pour voir tout la liste a la fois</a>

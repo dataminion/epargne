@@ -1,0 +1,68 @@
+<!-- BEGIN error_required -->
+<b>Vous n'avez pas replis. Il faut entrer:</b><br>
+<!-- BEGIN data -->
+&nbsp;&nbsp;&nbsp; {error_required.data.ERROR}<br>
+<!-- END data -->
+<!-- END error_required -->
+<!-- BEGIN error_symbol -->
+<b>Il ya pleusieur erreur de saisir. Corriger :</b><br>
+<!-- BEGIN data -->
+&nbsp;&nbsp;&nbsp;{error_symbol.data.ERROR}<br>
+<!-- END data -->
+<!-- END error_symbol -->
+
+<form action="" method="post"> 
+  <table cellspacing="0" id="form" width="100%"> 
+    <tr class="header"> 
+      <th colspan="2">Information General</th> 
+    </tr> 
+   
+    <tr> 
+      <th scope="row">Nom du Compte<br />
+       (remplis automaticmant par nom du client si vide)</th> 
+      <td><input id="nom" name="NOM" type="text" value="{NOM}"/></td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Numero de compte CLCAM</th> 
+      <td><input id="noclcam" type="text" name="noclcam" value="{NOCLCAM}"/></td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Agent du CLCAM</th> 
+      <td><input type="hidden" name="emp" value="{SIGNING_AGENT}" />{SIGNING_AGENT}</td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Date comencement</th> 
+      <td><input type="hidden" name="date" value="{SIGNING_DATE}" />{SIGNING_DATE}</td> 
+    </tr> 
+    
+    <tr class="header"> 
+      <th colspan="2">Misc. Information</th> 
+    </tr> 
+
+    <tr class="required"> 
+      <th scope="row">Zone*</th> 
+      <td><input name="zone" type="text" id="zone" size="5" maxlength="3" value="{ZONE}"
+	  <!-- BEGIN disabled -->
+	  disabled="disabled"
+	  <!-- END disabled -->
+	  /></td>
+    </tr> 
+    
+	<tr class="required"> 
+      <th scope="row">Mise*</th> 
+      <td><input name="mise" type="text" id="mise" size="5" maxlength="5" value="{MISE}" /></td> 
+    </tr> 
+  </table> 
+  <p class="submit">
+  <input type="submit" name="Submit" value="Valider" id="buttonSubmit" /> 
+  <input type="reset" name="Submit2" value="Vider" id="buttonReset" /> 
+  </p>
+</form>
+    <script type="text/javascript">
+			// <![CDATA[
+				window.setTimeout('PMA_focusInput("nom","noclcam")', 500);
+			// ]]>
+	</script>

@@ -1,0 +1,89 @@
+@charset "utf-8";
+/* CSS Document */
+
+table {    margin:             0.5em 0 0.5em 10%;
+    border:             0.1em solid #000;
+	width:80%;
+    background-color:	#CCC;
+}
+thead th{
+	color: #fff;
+	background-color:#354342;
+}
+
+tfoot{
+	color: #fff;
+	background-color:#354342;
+}
+tbody{    
+    border:             0.1em solid #FF0;
+}
+/* input box: deposit */
+.deposit {
+    color:              #000000;
+    background-color:	#CCC;
+
+}
+h1.deposit,
+div.deposit {
+    margin:             0.5em 0 0.5em 10%;
+    border:             0.1em solid #000;
+    padding:            0px 0px 0px 0px;
+	height:120px;
+	width:80%;
+}
+.deposit input{
+	margin-left:-20%;
+}
+.deposit input.add{
+	margin-left:2%;
+	margin-top:10%;
+}
+.deposit label{
+	padding-left:15%;
+	padding-top:2%;
+	display:inline-block;
+	height:64px;
+	vertical-align:text-bottom;
+	text-align:right;
+}
+.deposit label.client{
+	background-image:url(img/client.png);
+    background-repeat:  no-repeat;
+    background-position: 0px 50%;
+}
+.deposit label.goal{
+	background-image:url(img/coins.png);
+    background-repeat:  no-repeat;
+    background-position: 0px 50%;
+}
+.deposit fieldset{
+	margin:10px 10px 10px 40px;
+	height:75px;
+	display:inline;
+	vertical-align:middle;
+}
+/* message boxes: data-loss warning */
+.dataloss {
+    color:              #000000;
+    background-color: #FF9;
+}
+h1.dataloss,
+div.dataloss {
+    margin:             0.5em 0 0.5em 10%;
+    border:             0.1em solid #F60;
+    background-image:   url(img/trash.png);
+    background-repeat:  no-repeat;
+    background-position: 10px 50%;
+    padding:            10px 10px 10px 75px;
+	width:71.5%;
+	height:70px;
+            }
+.dataloss h1 {
+    border-bottom:      0.1em solid #F60;
+    font-weight:        bold;
+    text-align:         left;
+    margin:             5% 40px 0.2em 0;
+	font-size:medium;
+
+}

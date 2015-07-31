@@ -1,0 +1,102 @@
+<!-- BEGIN error_required -->
+<b>Vous n'avez pas replis. Il faut entrer:</b><br>
+<!-- BEGIN data -->
+&nbsp;&nbsp;&nbsp; {error_required.data.ERROR}<br>
+<!-- END data -->
+<!-- END error_required -->
+<!-- BEGIN error_symbol -->
+<b>Il ya pleusieur erreur de saisir. Corriger :</b><br>
+<!-- BEGIN data -->
+&nbsp;&nbsp;&nbsp;{error_symbol.data.ERROR}<br>
+<!-- END data -->
+<!-- END error_symbol -->
+<!-- BEGIN error_password -->
+<b>Il ya pleusieur erreur de saisir. Corriger :</b><br>
+<!-- BEGIN data -->
+&nbsp;&nbsp;&nbsp;{error_password.data.ERROR}<br>
+<!-- END data -->
+<!-- END error_password -->
+<form action="" method="post">
+<table cellspacing="0" id="form" width="100%">
+	<tr class="header"> 
+		<th colspan="2">Information Personelle</th> 
+    </tr> 
+
+    <tr class="required"> 
+      <th scope="row">Prenom* </th> 
+      <td><input name="fname" type="text" size="11" /></td> 
+    </tr> 
+
+    <tr class="required"> 
+      <th scope="row">Nom* </th> 
+      <td><input name="lname" type="text" size="11" /></td> 
+    </tr> 
+
+<!--   <tr class="required"> 
+      <th scope="row">Sexe*</th> 
+      <td>
+      	<input type="radio" name="sex" value="female" /> 
+        Female
+        <input type="radio" name="sex" value="male" /> 
+        Male 
+      </td> 
+    </tr>  
+-->    
+    <tr class="header"> 
+      <th colspan="2">Information General</th> 
+    </tr> 
+   
+     <tr class="required">
+      <th scope="row">Nom d'utilisateur</th> 
+      <td><input name="uname" type="text" /></td> 
+    </tr> 
+    
+     <tr class="required"> 
+      <th scope="row">Mot de Pass</th> 
+      <td><input type="password" name="pass1" /></td> 
+    </tr> 
+    
+      <tr class="required"> 
+      <th scope="row">reentree</th> 
+      <td><input type="password" name="pass2" /></td> 
+    </tr>
+ 
+    <tr class="required"> 
+      <th scope="row">Position*</th> 
+      <td>
+            <select name="job"> 
+            <!-- BEGIN select -->
+				<option value="{select.JOB_LVL}">{select.JOB_TITLE}</option>
+            <!-- END select -->
+            </select>
+        </td> 
+    </tr>
+
+    <tr class="required"> 
+      <th scope="row">Zone*</th> 
+      <td><input name="zone" type="text" id="zone" size="5" maxlength="3" value="{ZONE}"/></td>
+    </tr> 
+    
+<!--    <tr> 
+      <th scope="row">Photo</th> 
+      <td><input type="file" name="upload_file"></td> 
+    </tr> 
+	-->
+    <tr> 
+      <th scope="row">Agent du CLCAM</th> 
+      <td><input type="hidden" name="emp" value="{SIGNING_AGENT}" />{SIGNING_AGENT}</td> 
+    </tr> 
+    
+    <tr> 
+      <th scope="row">Date comencement</th> 
+      <td><input type="hidden" name="date" value="{HIRE_DATE}" />{HIRE_DATE}</td> 
+    </tr>  
+    
+  </table> 
+<p class="submit">
+  <input type="hidden" name="action" value="new" />
+  <input type="submit" name="Submit" value="Valider" id="buttonSubmit" /> 
+  <input type="reset" name="Clear" value="Vider" id="buttonReset" />
+</p> 
+
+</form>
