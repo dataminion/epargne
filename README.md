@@ -6,6 +6,5 @@
  
  This code base is POC that was designed at the beginning of my career as a developer. I cannot warn you enough to not install this. Don't install it... don't use it...
  
- Its the first end to end thing that I ever built so I felt like being honest about it
- 
- -Batoure
+ Its the first end to end full stack application that I ever built so I feel its important to be honest about it
+ -Austin
